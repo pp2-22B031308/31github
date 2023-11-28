@@ -27,7 +27,9 @@ int rabinKarp(string s, string pattern) {
     hashMap[sHash] = 0; // Store the initial substring hash value in the map
 
     // Loop through text to find pattern
-    for (int i = 0; i <= n - m; i++) { //  '<=' to check the last substring
+
+    for (int i = 0; i <= n - m; i++) { // <=' to check the last substring
+
         if (pHash == sHash) { // Compare hashes
             if (pattern == s.substr(i, m)) { // If they match, check the substring and pattern values
                 return i;

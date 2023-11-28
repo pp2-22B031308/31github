@@ -27,7 +27,7 @@ int rabinKarp(string s, string pattern) {
     hashMap[sHash] = 0; // Store the initial substring hash value in the map
 
     // Loop through text to find pattern
-    for (int i = 0; i <= n - m; i++) { // Changed '<' to '<=' to check the last substring
+    for (int i = 0; i <= n - m; i++) { //  '<=' to check the last substring
         if (pHash == sHash) { // Compare hashes
             if (pattern == s.substr(i, m)) { // If they match, check the substring and pattern values
                 return i;
@@ -56,4 +56,18 @@ int main() {
     int index = rabinKarp(s, pattern);
 
     cout << index;
+
 }
+
+// RABIN KARP 
+// hash -> int val t give pattern unique val
+// time complex: best case o(n + m); worst case o(n * m);
+// process: calc hash for patter and for substr.string;
+// hash -> % prime unique hashes, * BASE = 256 how many we can accept, / INT_MAX overflooding
+// colission -> same hash for not same patterns
+// chaining -> from posledovatelnost zavisit hash ;
+// quadratic probing, linear probing, double hashing;
+
+// USAGE: search messages in Telegram, plagiarism systems
+
+

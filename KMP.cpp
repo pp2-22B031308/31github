@@ -104,3 +104,13 @@ int main() {
     }
     return 0;
 }
+// Knutth Morris Pratt algorithm
+// Time complexity -> O(n + m)
+
+// PROCESS: substr -> fucntion, complexity 
+// prefix functions, substr with size of pattern from string
+
+// USAGE: search messages in Telegram, plagiarism systems
+
+// LINEAR: linear string, linear pattern, cycle linear
+

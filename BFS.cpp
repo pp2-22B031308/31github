@@ -57,3 +57,15 @@ int main() {
 
     return 0;
 }
+
+//  BFS -> Breadth First Search
+
+// complexity: O(V + E), space o(V), V -> kolvo nodes, E -> kolvo edges
+// PROCESS: start from the root we visit node and save them in queue visited
+//  visited[hranit nodes that we traversed already]
+// queue[hranit nodes that are neighbours of current node]
+// BFS works until no unvisited element left
+
+// USAGE: traversal through graphs, Solving puzzles like the 8-puzzle or maze traversal.
+// Network broadcasting in networks and social media algorithms.
+
